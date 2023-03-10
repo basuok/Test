@@ -8,6 +8,18 @@
 import UIKit
 
 class ImgeTableViewCell: UITableViewCell {
+    
+    @IBOutlet var myImageView: UIImageView!
+    
+    static let identifire = "ImgeTableViewCell"
+    
+    static func nib()  -> UINib{
+        return UINib(nibName: "ImgeTableViewCell", bundle: nil)
+    }
+    
+    public func configure(with imageName : String){
+        myImageView.image = UIImage(named: imageName)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

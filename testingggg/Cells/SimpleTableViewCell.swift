@@ -8,6 +8,11 @@
 import UIKit
 
 class SimpleTableViewCell: UITableViewCell {
+    
+    // first create Identifier
+    static let identifier = "SimpleTableViewCell"
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
